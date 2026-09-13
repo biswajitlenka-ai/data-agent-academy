@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goal Decomposition — Data Agent Academy</title>
-  <link rel="stylesheet" href="../../css/design-system.css?v=10">
-  <link rel="stylesheet" href="../../css/components.css?v=10">
-  <link rel="stylesheet" href="../../css/animations.css?v=10">
+  <link rel="stylesheet" href="../../css/design-system.css?v=11">
+  <link rel="stylesheet" href="../../css/components.css?v=11">
+  <link rel="stylesheet" href="../../css/animations.css?v=11">
   <style>
     /* --- Dependency Graph --- */
     .dep-graph {
@@ -322,57 +322,57 @@
             <rect width="700" height="380" fill="url(#gd-grid)" rx="8"/>
             <!-- Root node -->
             <rect x="175" y="18" width="350" height="44" rx="6" fill="rgba(74,158,255,0.12)" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3" filter="url(#gd-glow)"/>
-            <text x="350" y="36" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#e2e8f0">Show Q3 revenue by region vs last year</text>
-            <text x="350" y="52" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">USER QUERY — ROOT GOAL</text>
+            <text x="350" y="36" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#0d001a">Show Q3 revenue by region vs last year</text>
+            <text x="350" y="52" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#3d2060">USER QUERY — ROOT GOAL</text>
             <!-- Arrows root to sub-tasks -->
             <line x1="270" y1="62" x2="145" y2="100" stroke="#4a9eff" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#gd-arrow)"/>
             <line x1="350" y1="62" x2="350" y2="100" stroke="#4a9eff" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#gd-arrow)"/>
             <line x1="430" y1="62" x2="555" y2="100" stroke="#4a9eff" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#gd-arrow)"/>
             <!-- Sub-task A: Fetch Q3 current -->
             <rect x="50" y="102" width="190" height="38" rx="5" fill="rgba(45,212,191,0.10)" stroke="#2dd4bf" stroke-width="1.2" stroke-dasharray="5 3"/>
-            <text x="145" y="120" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#e2e8f0">Fetch Q3 Current Year</text>
-            <text x="145" y="133" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">SUB-TASK A</text>
+            <text x="145" y="120" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#0d001a">Fetch Q3 Current Year</text>
+            <text x="145" y="133" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#3d2060">SUB-TASK A</text>
             <!-- Sub-task B: Fetch Q3 prior -->
             <rect x="255" y="102" width="190" height="38" rx="5" fill="rgba(45,212,191,0.10)" stroke="#2dd4bf" stroke-width="1.2" stroke-dasharray="5 3"/>
-            <text x="350" y="120" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#e2e8f0">Fetch Q3 Prior Year</text>
-            <text x="350" y="133" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">SUB-TASK B</text>
+            <text x="350" y="120" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#0d001a">Fetch Q3 Prior Year</text>
+            <text x="350" y="133" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#3d2060">SUB-TASK B</text>
             <!-- Sub-task C: Compare & Format -->
             <rect x="460" y="102" width="190" height="38" rx="5" fill="rgba(245,158,11,0.10)" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="5 3"/>
-            <text x="555" y="120" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#e2e8f0">Compare &amp; Format</text>
-            <text x="555" y="133" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">SUB-TASK C</text>
+            <text x="555" y="120" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#0d001a">Compare &amp; Format</text>
+            <text x="555" y="133" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#3d2060">SUB-TASK C</text>
             <!-- Arrows sub-task A to leaves -->
             <line x1="105" y1="140" x2="80" y2="178" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#gd-arrow-teal)"/>
             <line x1="185" y1="140" x2="210" y2="178" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#gd-arrow-teal)"/>
             <!-- Leaves A -->
-            <rect x="18" y="180" width="125" height="34" rx="4" fill="rgba(45,212,191,0.06)" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="80" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#94a3b8">Query fact_sales</text>
-            <rect x="155" y="180" width="115" height="34" rx="4" fill="rgba(45,212,191,0.06)" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="212" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#94a3b8">Filter Jul–Sep</text>
+            <rect x="18" y="180" width="125" height="34" rx="4" fill="rgba(45,212,191,0.06)" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
+            <text x="80" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#3d2060">Query fact_sales</text>
+            <rect x="155" y="180" width="115" height="34" rx="4" fill="rgba(45,212,191,0.06)" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
+            <text x="212" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#3d2060">Filter Jul–Sep</text>
             <!-- Arrows sub-task B to leaves -->
             <line x1="310" y1="140" x2="315" y2="178" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#gd-arrow-teal)"/>
             <line x1="390" y1="140" x2="425" y2="178" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="5 3" marker-end="url(#gd-arrow-teal)"/>
             <!-- Leaves B -->
-            <rect x="260" y="180" width="125" height="34" rx="4" fill="rgba(45,212,191,0.06)" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="322" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#94a3b8">Query fact_sales</text>
-            <rect x="397" y="180" width="115" height="34" rx="4" fill="rgba(45,212,191,0.06)" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="454" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#94a3b8">Filter prior year</text>
+            <rect x="260" y="180" width="125" height="34" rx="4" fill="rgba(45,212,191,0.06)" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
+            <text x="322" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#3d2060">Query fact_sales</text>
+            <rect x="397" y="180" width="115" height="34" rx="4" fill="rgba(45,212,191,0.06)" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
+            <text x="454" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#3d2060">Filter prior year</text>
             <!-- Arrows sub-task C to leaves -->
             <line x1="525" y1="140" x2="535" y2="178" stroke="#f59e0b" stroke-width="1" stroke-dasharray="5 3"/>
             <line x1="585" y1="140" x2="620" y2="178" stroke="#f59e0b" stroke-width="1" stroke-dasharray="5 3"/>
             <!-- Leaves C -->
-            <rect x="500" y="180" width="115" height="34" rx="4" fill="rgba(245,158,11,0.06)" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="557" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#94a3b8">Calculate delta</text>
-            <rect x="625" y="180" width="60" height="34" rx="4" fill="rgba(245,158,11,0.06)" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="655" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#94a3b8">Build table</text>
+            <rect x="500" y="180" width="115" height="34" rx="4" fill="rgba(245,158,11,0.06)" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
+            <text x="557" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#3d2060">Calculate delta</text>
+            <rect x="625" y="180" width="60" height="34" rx="4" fill="rgba(245,158,11,0.06)" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
+            <text x="655" y="200" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#3d2060">Build table</text>
             <!-- Parallel indicator -->
             <rect x="158" y="150" width="80" height="18" rx="3" fill="rgba(45,212,191,0.12)" stroke="#2dd4bf" stroke-width="0.8" stroke-dasharray="3 2"/>
             <text x="198" y="162" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#2dd4bf">PARALLEL</text>
             <!-- Dependency dashed line between A and B -->
-            <line x1="240" y1="121" x2="255" y2="121" stroke="#334155" stroke-width="1" stroke-dasharray="3 2"/>
+            <line x1="240" y1="121" x2="255" y2="121" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="3 2"/>
             <!-- Convergence lines to merge node -->
-            <line x1="145" y1="214" x2="350" y2="258" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
-            <line x1="350" y1="214" x2="350" y2="258" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
-            <line x1="555" y1="214" x2="350" y2="258" stroke="#334155" stroke-width="1" stroke-dasharray="4 3"/>
+            <line x1="145" y1="214" x2="350" y2="258" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
+            <line x1="350" y1="214" x2="350" y2="258" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
+            <line x1="555" y1="214" x2="350" y2="258" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
             <!-- Merge node -->
             <circle cx="350" cy="265" r="8" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="1" stroke-dasharray="3 2"/>
             <text x="350" y="268" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#10b981">M</text>
@@ -381,9 +381,9 @@
             <!-- Final node -->
             <rect x="235" y="292" width="230" height="40" rx="6" fill="rgba(16,185,129,0.12)" stroke="#10b981" stroke-width="1.5" stroke-dasharray="6 3" filter="url(#gd-glow)"/>
             <text x="350" y="310" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#10b981">Formatted Response</text>
-            <text x="350" y="324" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#94a3b8">AGGREGATED OUTPUT</text>
+            <text x="350" y="324" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#3d2060">AGGREGATED OUTPUT</text>
             <!-- Label -->
-            <text x="350" y="362" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#334155">AcmeCorp: Complex Query Decomposition</text>
+            <text x="350" y="362" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#f0eaff">AcmeCorp: Complex Query Decomposition</text>
           </svg>
         </div>
 
@@ -464,7 +464,7 @@
               <!-- Background grid -->
               <defs>
                 <pattern id="depGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-                  <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1a2d4a" stroke-width="0.5"/>
+                  <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#d4c8f0" stroke-width="0.5"/>
                 </pattern>
                 <filter id="glowBlue">
                   <feGaussianBlur stdDeviation="3" result="blur"/>
@@ -505,49 +505,49 @@
               <!-- Task Nodes -->
               <!-- Task A -->
               <g class="task-node n-a" filter="url(#glowBlue)">
-                <rect x="120" y="25" width="200" height="50" rx="4" fill="#0f1f38" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
+                <rect x="120" y="25" width="200" height="50" rx="4" fill="#ffffff" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
                 <text x="135" y="47" class="task-label">A: Pull Q4 Sales Data</text>
                 <text x="135" y="63" class="task-sublabel">No dependency</text>
               </g>
 
               <!-- Task B -->
               <g class="task-node n-b" filter="url(#glowTeal)">
-                <rect x="120" y="90" width="200" height="50" rx="4" fill="#0f1f38" stroke="#2dd4bf" stroke-width="1.5" stroke-dasharray="6 3"/>
+                <rect x="120" y="90" width="200" height="50" rx="4" fill="#ffffff" stroke="#2dd4bf" stroke-width="1.5" stroke-dasharray="6 3"/>
                 <text x="135" y="112" class="task-label">B: Pull Q3 Data (YoY)</text>
                 <text x="135" y="128" class="task-sublabel">No dependency &mdash; parallel with A</text>
               </g>
 
               <!-- Task C -->
               <g class="task-node n-c" filter="url(#glowBlue)">
-                <rect x="340" y="150" width="200" height="46" rx="4" fill="#0f1f38" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
+                <rect x="340" y="150" width="200" height="46" rx="4" fill="#ffffff" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
                 <text x="355" y="170" class="task-label">C: Regional Breakdown</text>
                 <text x="355" y="184" class="task-sublabel">Depends on A</text>
               </g>
 
               <!-- Task D -->
               <g class="task-node n-d" filter="url(#glowBlue)">
-                <rect x="340" y="216" width="200" height="46" rx="4" fill="#0f1f38" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
+                <rect x="340" y="216" width="200" height="46" rx="4" fill="#ffffff" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
                 <text x="355" y="236" class="task-label">D: Product Analysis</text>
                 <text x="355" y="250" class="task-sublabel">Depends on A</text>
               </g>
 
               <!-- Task E -->
               <g class="task-node n-e" filter="url(#glowBlue)">
-                <rect x="460" y="150" width="200" height="46" rx="4" fill="#0f1f38" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
+                <rect x="460" y="150" width="200" height="46" rx="4" fill="#ffffff" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
                 <text x="475" y="170" class="task-label">E: YoY Comparison</text>
                 <text x="475" y="184" class="task-sublabel">Depends on A + B</text>
               </g>
 
               <!-- Task F -->
               <g class="task-node n-f" filter="url(#glowBlue)">
-                <rect x="480" y="272" width="220" height="46" rx="4" fill="#0f1f38" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6 3"/>
+                <rect x="480" y="272" width="220" height="46" rx="4" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6 3"/>
                 <text x="495" y="292" class="task-label">F: Gen Recommendations</text>
                 <text x="495" y="306" class="task-sublabel">Depends on C + D + E</text>
               </g>
 
               <!-- Task G -->
               <g class="task-node n-g" filter="url(#glowBlue)">
-                <rect x="530" y="350" width="210" height="46" rx="4" fill="#0f1f38" stroke="#10b981" stroke-width="2"/>
+                <rect x="530" y="350" width="210" height="46" rx="4" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
                 <text x="545" y="370" class="task-label" style="fill:#10b981">G: Format Final Report</text>
                 <text x="545" y="384" class="task-sublabel">Depends on F &mdash; DONE</text>
               </g>
@@ -1711,7 +1711,7 @@ const EvolvingDiagram = {
       <text x="350" y="362" text-anchor="middle" fill="#CC00FF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">Final Answer → User</text>
 
       <!-- Trace example (left side) -->
-      <rect x="20" y="108" width="175" height="220" rx="5" fill="rgba(161,0,255,0.03)" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="4,3"/>
+      <rect x="20" y="108" width="175" height="220" rx="5" fill="rgba(161,0,255,0.03)" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4,3"/>
       <text x="107" y="128" text-anchor="middle" fill="#A100FF" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="0.05em">ACMECORP TRACE</text>
       <text x="30" y="150" fill="#5a0090" font-family="JetBrains Mono, monospace" font-size="7.5">① THINK: discover schema</text>
       <text x="30" y="167" fill="#5a0090" font-family="JetBrains Mono, monospace" font-size="7.5">① ACT: get_schema(sales)</text>
