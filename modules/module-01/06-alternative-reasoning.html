@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alternative Reasoning Patterns &mdash; Data Agent Academy</title>
-  <link rel="stylesheet" href="../../css/design-system.css?v=11">
-  <link rel="stylesheet" href="../../css/components.css?v=11">
-  <link rel="stylesheet" href="../../css/animations.css?v=11">
+  <link rel="stylesheet" href="../../css/design-system.css?v=12">
+  <link rel="stylesheet" href="../../css/components.css?v=12">
+  <link rel="stylesheet" href="../../css/animations.css?v=12">
   <style>
     /* --- Pattern Flow Diagram --- */
     .pattern-flow {
@@ -163,7 +163,7 @@
                 <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
               </filter>
               <marker id="arrowBlue10" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a9eff"/>
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#A100FF"/>
               </marker>
               <marker id="arrowTeal10" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
                 <path d="M 0 0 L 10 5 L 0 10 z" fill="#2dd4bf"/>
@@ -177,7 +177,7 @@
             </defs>
 
             <!-- Background -->
-            <rect width="700" height="380" rx="8" fill="rgba(15,23,42,0.85)" stroke="#d4c8f0" stroke-dasharray="4,4"/>
+            <rect width="700" height="380" rx="8" fill="rgba(248,245,255,0.98)" stroke="#d4c8f0" stroke-dasharray="4,4"/>
 
             <!-- Quadrant dividers -->
             <line x1="350" y1="20" x2="350" y2="340" stroke="#d4c8f0" stroke-dasharray="3,5"/>
@@ -185,24 +185,24 @@
 
             <!-- ===== Top-Left: ReAct (circular, blue) ===== -->
             <rect x="20" y="20" width="320" height="155" rx="6" fill="none" stroke="#d4c8f0" stroke-dasharray="4,4"/>
-            <text x="35" y="42" fill="#4a9eff" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700">ReAct</text>
+            <text x="35" y="42" fill="#A100FF" font-family="JetBrains Mono,monospace" font-size="11" font-weight="700">ReAct</text>
 
             <!-- Circular flow: Think -> Act -> Observe -> loop -->
-            <rect x="55" y="65" width="70" height="32" rx="5" fill="rgba(74,158,255,0.12)" stroke="#4a9eff" stroke-dasharray="3,2"/>
+            <rect x="55" y="65" width="70" height="32" rx="5" fill="rgba(74,158,255,0.12)" stroke="#A100FF" stroke-dasharray="3,2"/>
             <text x="90" y="85" text-anchor="middle" fill="#0d001a" font-family="JetBrains Mono,monospace" font-size="10">Think</text>
 
-            <line x1="125" y1="81" x2="150" y2="81" stroke="#4a9eff" stroke-width="1.2" marker-end="url(#arrowBlue10)"/>
+            <line x1="125" y1="81" x2="150" y2="81" stroke="#A100FF" stroke-width="1.2" marker-end="url(#arrowBlue10)"/>
 
-            <rect x="155" y="65" width="70" height="32" rx="5" fill="rgba(74,158,255,0.12)" stroke="#4a9eff" stroke-dasharray="3,2"/>
+            <rect x="155" y="65" width="70" height="32" rx="5" fill="rgba(74,158,255,0.12)" stroke="#A100FF" stroke-dasharray="3,2"/>
             <text x="190" y="85" text-anchor="middle" fill="#0d001a" font-family="JetBrains Mono,monospace" font-size="10">Act</text>
 
-            <line x1="225" y1="81" x2="250" y2="81" stroke="#4a9eff" stroke-width="1.2" marker-end="url(#arrowBlue10)"/>
+            <line x1="225" y1="81" x2="250" y2="81" stroke="#A100FF" stroke-width="1.2" marker-end="url(#arrowBlue10)"/>
 
-            <rect x="255" y="65" width="70" height="32" rx="5" fill="rgba(74,158,255,0.12)" stroke="#4a9eff" stroke-dasharray="3,2"/>
+            <rect x="255" y="65" width="70" height="32" rx="5" fill="rgba(74,158,255,0.12)" stroke="#A100FF" stroke-dasharray="3,2"/>
             <text x="290" y="85" text-anchor="middle" fill="#0d001a" font-family="JetBrains Mono,monospace" font-size="10">Observe</text>
 
             <!-- Loop arrow back from Observe to Think -->
-            <path d="M 290 97 C 290 135, 90 135, 90 97" fill="none" stroke="#4a9eff" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrowBlue10)"/>
+            <path d="M 290 97 C 290 135, 90 135, 90 97" fill="none" stroke="#A100FF" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrowBlue10)"/>
             <text x="190" y="148" text-anchor="middle" fill="#3d2060" font-family="JetBrains Mono,monospace" font-size="8" font-style="italic">loop until done</text>
 
             <!-- ===== Top-Right: Plan-and-Execute (linear, teal) ===== -->
@@ -252,21 +252,21 @@
             <!-- Level 2 branches from top -->
             <line x1="166" y1="237" x2="210" y2="225" stroke="#d4c8f0" stroke-width="1"/>
             <line x1="166" y1="243" x2="210" y2="250" stroke="#10b981" stroke-width="1.5"/>
-            <circle cx="218" cy="225" r="6" fill="rgba(51,65,81,0.3)" stroke="#d4c8f0" stroke-dasharray="2,2"/>
+            <circle cx="218" cy="225" r="6" fill="rgba(161,0,255,0.06)" stroke="#d4c8f0" stroke-dasharray="2,2"/>
             <circle cx="218" cy="250" r="6" fill="rgba(16,185,129,0.2)" stroke="#10b981" stroke-width="1.5"/>
             <text x="234" y="254" fill="#10b981" font-family="JetBrains Mono,monospace" font-size="8" font-weight="600">BEST</text>
 
             <!-- Level 2 branches from middle -->
             <line x1="166" y1="267" x2="210" y2="260" stroke="#d4c8f0" stroke-width="1"/>
             <line x1="166" y1="273" x2="210" y2="280" stroke="#d4c8f0" stroke-width="1"/>
-            <circle cx="218" cy="260" r="6" fill="rgba(51,65,81,0.3)" stroke="#d4c8f0" stroke-dasharray="2,2"/>
-            <circle cx="218" cy="280" r="6" fill="rgba(51,65,81,0.3)" stroke="#d4c8f0" stroke-dasharray="2,2"/>
+            <circle cx="218" cy="260" r="6" fill="rgba(161,0,255,0.06)" stroke="#d4c8f0" stroke-dasharray="2,2"/>
+            <circle cx="218" cy="280" r="6" fill="rgba(161,0,255,0.06)" stroke="#d4c8f0" stroke-dasharray="2,2"/>
 
             <!-- Level 2 branches from bottom -->
             <line x1="166" y1="297" x2="210" y2="295" stroke="#d4c8f0" stroke-width="1"/>
             <line x1="166" y1="303" x2="210" y2="310" stroke="#d4c8f0" stroke-width="1"/>
-            <circle cx="218" cy="295" r="6" fill="rgba(51,65,81,0.3)" stroke="#d4c8f0" stroke-dasharray="2,2"/>
-            <circle cx="218" cy="310" r="6" fill="rgba(51,65,81,0.3)" stroke="#d4c8f0" stroke-dasharray="2,2"/>
+            <circle cx="218" cy="295" r="6" fill="rgba(161,0,255,0.06)" stroke="#d4c8f0" stroke-dasharray="2,2"/>
+            <circle cx="218" cy="310" r="6" fill="rgba(161,0,255,0.06)" stroke="#d4c8f0" stroke-dasharray="2,2"/>
 
             <text x="180" y="328" text-anchor="middle" fill="#3d2060" font-family="JetBrains Mono,monospace" font-size="8" font-style="italic">evaluate &amp; prune branches</text>
 
@@ -296,9 +296,9 @@
             <text x="513" y="310" text-anchor="middle" fill="#3d2060" font-family="JetBrains Mono,monospace" font-size="8" font-style="italic">retry with insight</text>
 
             <!-- Center Diamond: CHOOSE BY TASK TYPE -->
-            <polygon points="350,155 395,180 350,205 305,180" fill="rgba(74,158,255,0.1)" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="4,3" filter="url(#glow10)"/>
+            <polygon points="350,155 395,180 350,205 305,180" fill="rgba(74,158,255,0.1)" stroke="#A100FF" stroke-width="1.5" stroke-dasharray="4,3" filter="url(#glow10)"/>
             <text x="350" y="177" text-anchor="middle" fill="#0d001a" font-family="JetBrains Mono,monospace" font-size="7" font-weight="600">CHOOSE BY</text>
-            <text x="350" y="188" text-anchor="middle" fill="#4a9eff" font-family="JetBrains Mono,monospace" font-size="7" font-weight="700">TASK TYPE</text>
+            <text x="350" y="188" text-anchor="middle" fill="#A100FF" font-family="JetBrains Mono,monospace" font-size="7" font-weight="700">TASK TYPE</text>
 
             <!-- Bottom border label -->
             <text x="350" y="370" text-anchor="middle" fill="#f0eaff" font-family="JetBrains Mono,monospace" font-size="8">REASONING PATTERN SELECTION MATRIX</text>

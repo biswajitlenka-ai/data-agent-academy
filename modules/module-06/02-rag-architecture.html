@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RAG Architecture &mdash; Data Agent Academy</title>
-  <link rel="stylesheet" href="../../css/design-system.css?v=11">
-  <link rel="stylesheet" href="../../css/components.css?v=11">
-  <link rel="stylesheet" href="../../css/animations.css?v=11">
+  <link rel="stylesheet" href="../../css/design-system.css?v=12">
+  <link rel="stylesheet" href="../../css/components.css?v=12">
+  <link rel="stylesheet" href="../../css/animations.css?v=12">
   <style>
     .pipeline-flow {
       display: flex;
@@ -142,7 +142,7 @@
                 <feGaussianBlur stdDeviation="3" result="blur"/>
                 <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
               </filter>
-              <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#4a9eff"/></marker>
+              <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#A100FF"/></marker>
               <marker id="arrowTeal" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#2dd4bf"/></marker>
               <marker id="arrowAmber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#f59e0b"/></marker>
               <marker id="arrowDim" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#f0eaff"/></marker>
@@ -157,12 +157,12 @@
             <text x="350" y="22" text-anchor="middle" class="rt" style="fill:#4a9eff;font-size:11px;">QUERY-TIME RETRIEVAL PIPELINE</text>
 
             <!-- Stage 1: USER QUERY -->
-            <rect x="10" y="50" width="75" height="44" rx="3" fill="rgba(74,158,255,0.1)" stroke="#4a9eff" stroke-width="1.5"/>
+            <rect x="10" y="50" width="75" height="44" rx="3" fill="rgba(74,158,255,0.1)" stroke="#A100FF" stroke-width="1.5"/>
             <text x="47" y="69" text-anchor="middle" class="rl">USER</text>
             <text x="47" y="81" text-anchor="middle" class="rl">QUERY</text>
 
             <!-- Arrow 1 -->
-            <line x1="87" y1="72" x2="108" y2="72" stroke="#4a9eff" stroke-width="1.2" marker-end="url(#arrowBlue)"/>
+            <line x1="87" y1="72" x2="108" y2="72" stroke="#A100FF" stroke-width="1.2" marker-end="url(#arrowBlue)"/>
 
             <!-- Stage 2: EMBEDDING -->
             <rect x="112" y="50" width="80" height="44" rx="3" fill="rgba(45,212,191,0.1)" stroke="#2dd4bf" stroke-width="1.5"/>
@@ -191,18 +191,18 @@
             <text x="373" y="81" text-anchor="middle" class="rs">cross-encoder</text>
 
             <!-- Arrow 4 -->
-            <line x1="414" y1="72" x2="435" y2="72" stroke="#4a9eff" stroke-width="1.2" marker-end="url(#arrowBlue)"/>
+            <line x1="414" y1="72" x2="435" y2="72" stroke="#A100FF" stroke-width="1.2" marker-end="url(#arrowBlue)"/>
 
             <!-- Stage 5: CONTEXT ASSEMBLY -->
-            <rect x="439" y="50" width="80" height="44" rx="3" fill="rgba(74,158,255,0.1)" stroke="#4a9eff" stroke-width="1.5"/>
+            <rect x="439" y="50" width="80" height="44" rx="3" fill="rgba(74,158,255,0.1)" stroke="#A100FF" stroke-width="1.5"/>
             <text x="479" y="69" text-anchor="middle" class="rl">CONTEXT</text>
             <text x="479" y="81" text-anchor="middle" class="rl">ASSEMBLY</text>
 
             <!-- Arrow 5 -->
-            <line x1="521" y1="72" x2="542" y2="72" stroke="#4a9eff" stroke-width="1.2" marker-end="url(#arrowBlue)"/>
+            <line x1="521" y1="72" x2="542" y2="72" stroke="#A100FF" stroke-width="1.2" marker-end="url(#arrowBlue)"/>
 
             <!-- Stage 6: LLM (glowing) -->
-            <rect x="546" y="46" width="68" height="52" rx="4" fill="rgba(74,158,255,0.15)" stroke="#4a9eff" stroke-width="2" filter="url(#glowR)"/>
+            <rect x="546" y="46" width="68" height="52" rx="4" fill="rgba(74,158,255,0.15)" stroke="#A100FF" stroke-width="2" filter="url(#glowR)"/>
             <text x="580" y="69" text-anchor="middle" class="rt" style="fill:#4a9eff;">LLM</text>
             <text x="580" y="83" text-anchor="middle" class="rs">GPT-4</text>
 

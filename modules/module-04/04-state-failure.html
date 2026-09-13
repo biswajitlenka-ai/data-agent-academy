@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>State Transitions &amp; Failure Handling &mdash; Data Agent Academy</title>
-  <link rel="stylesheet" href="../../css/design-system.css?v=11">
-  <link rel="stylesheet" href="../../css/components.css?v=11">
-  <link rel="stylesheet" href="../../css/animations.css?v=11">
+  <link rel="stylesheet" href="../../css/design-system.css?v=12">
+  <link rel="stylesheet" href="../../css/components.css?v=12">
+  <link rel="stylesheet" href="../../css/animations.css?v=12">
   <style>
     /* --- State Machine Diagram --- */
     .state-machine-svg {
@@ -290,7 +290,7 @@
           <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
             <defs>
               <filter id="sm-glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-              <marker id="sm-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#4a9eff"/></marker>
+              <marker id="sm-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#A100FF"/></marker>
               <marker id="sm-arrow-teal" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#2dd4bf"/></marker>
               <marker id="sm-arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#10b981"/></marker>
               <marker id="sm-arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#ef4444"/></marker>
@@ -298,14 +298,14 @@
               <marker id="sm-arrow-dim" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#3d2060"/></marker>
             </defs>
             <pattern id="sm-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(74,158,255,0.05)" stroke-width="0.5"/></pattern>
-            <rect width="700" height="380" fill="rgba(15,23,42,0.6)" rx="8"/>
+            <rect width="700" height="380" fill="rgba(248,245,255,0.95)" rx="8"/>
             <rect width="700" height="380" fill="url(#sm-grid)" rx="8"/>
             <!-- IDLE state -->
             <rect x="40" y="145" width="110" height="60" rx="30" fill="rgba(51,65,85,0.10)" stroke="#d4c8f0" stroke-width="1.5" stroke-dasharray="6 4"/>
             <text x="95" y="172" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#3d2060">IDLE</text>
             <text x="95" y="188" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#f0eaff">Waiting</text>
             <!-- REASONING state -->
-            <rect x="215" y="50" width="130" height="60" rx="30" fill="rgba(74,158,255,0.12)" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 4" filter="url(#sm-glow)"/>
+            <rect x="215" y="50" width="130" height="60" rx="30" fill="rgba(74,158,255,0.12)" stroke="#A100FF" stroke-width="1.5" stroke-dasharray="6 4" filter="url(#sm-glow)"/>
             <text x="280" y="77" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#0d001a">REASONING</text>
             <text x="280" y="93" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#3d2060">Thinking</text>
             <!-- EXECUTING state -->
@@ -321,8 +321,8 @@
             <text x="280" y="327" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#10b981">RESPONDING</text>
             <text x="280" y="343" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#3d2060">Delivering results</text>
             <!-- IDLE -> REASONING -->
-            <path d="M150,155 C180,135 195,115 215,95" fill="none" stroke="#4a9eff" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#sm-arrow)"/>
-            <text x="155" y="118" font-family="JetBrains Mono,monospace" font-size="8" fill="#4a9eff">user query</text>
+            <path d="M150,155 C180,135 195,115 215,95" fill="none" stroke="#A100FF" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#sm-arrow)"/>
+            <text x="155" y="118" font-family="JetBrains Mono,monospace" font-size="8" fill="#A100FF">user query</text>
             <!-- REASONING -> EXECUTING -->
             <line x1="345" y1="80" x2="420" y2="80" stroke="#2dd4bf" stroke-width="1.2" stroke-dasharray="6 4" marker-end="url(#sm-arrow-teal)"/>
             <text x="382" y="72" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#2dd4bf">plan ready</text>
@@ -374,7 +374,7 @@
           <svg class="state-machine-svg reveal reveal--scale" id="fullStateMachine" viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <marker id="smArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                <path d="M0,0 L10,3.5 L0,7" fill="#4a9eff" stroke="none"/>
+                <path d="M0,0 L10,3.5 L0,7" fill="#A100FF" stroke="none"/>
               </marker>
               <marker id="smArrowDim" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                 <path d="M0,0 L10,3.5 L0,7" fill="#A100FF" stroke="none"/>
@@ -567,7 +567,7 @@
           <svg class="cascade-svg" viewBox="0 0 740 180" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <marker id="cascadeArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-                <path d="M0,0 L8,3 L0,6" fill="none" stroke="#4a9eff" stroke-width="1"/>
+                <path d="M0,0 L8,3 L0,6" fill="none" stroke="#A100FF" stroke-width="1"/>
               </marker>
               <marker id="cascadeArrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
                 <path d="M0,0 L8,3 L0,6" fill="none" stroke="#ef4444" stroke-width="1"/>

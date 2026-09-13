@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goal Decomposition — Data Agent Academy</title>
-  <link rel="stylesheet" href="../../css/design-system.css?v=11">
-  <link rel="stylesheet" href="../../css/components.css?v=11">
-  <link rel="stylesheet" href="../../css/animations.css?v=11">
+  <link rel="stylesheet" href="../../css/design-system.css?v=12">
+  <link rel="stylesheet" href="../../css/components.css?v=12">
+  <link rel="stylesheet" href="../../css/animations.css?v=12">
   <style>
     /* --- Dependency Graph --- */
     .dep-graph {
@@ -313,21 +313,21 @@
           <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
             <defs>
               <filter id="gd-glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-              <marker id="gd-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#4a9eff"/></marker>
+              <marker id="gd-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#A100FF"/></marker>
               <marker id="gd-arrow-teal" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#2dd4bf"/></marker>
               <marker id="gd-arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#10b981"/></marker>
             </defs>
             <pattern id="gd-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(74,158,255,0.05)" stroke-width="0.5"/></pattern>
-            <rect width="700" height="380" fill="rgba(15,23,42,0.6)" rx="8"/>
+            <rect width="700" height="380" fill="rgba(248,245,255,0.95)" rx="8"/>
             <rect width="700" height="380" fill="url(#gd-grid)" rx="8"/>
             <!-- Root node -->
-            <rect x="175" y="18" width="350" height="44" rx="6" fill="rgba(74,158,255,0.12)" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3" filter="url(#gd-glow)"/>
+            <rect x="175" y="18" width="350" height="44" rx="6" fill="rgba(74,158,255,0.12)" stroke="#A100FF" stroke-width="1.5" stroke-dasharray="6 3" filter="url(#gd-glow)"/>
             <text x="350" y="36" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#0d001a">Show Q3 revenue by region vs last year</text>
             <text x="350" y="52" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#3d2060">USER QUERY — ROOT GOAL</text>
             <!-- Arrows root to sub-tasks -->
-            <line x1="270" y1="62" x2="145" y2="100" stroke="#4a9eff" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#gd-arrow)"/>
-            <line x1="350" y1="62" x2="350" y2="100" stroke="#4a9eff" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#gd-arrow)"/>
-            <line x1="430" y1="62" x2="555" y2="100" stroke="#4a9eff" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#gd-arrow)"/>
+            <line x1="270" y1="62" x2="145" y2="100" stroke="#A100FF" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#gd-arrow)"/>
+            <line x1="350" y1="62" x2="350" y2="100" stroke="#A100FF" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#gd-arrow)"/>
+            <line x1="430" y1="62" x2="555" y2="100" stroke="#A100FF" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#gd-arrow)"/>
             <!-- Sub-task A: Fetch Q3 current -->
             <rect x="50" y="102" width="190" height="38" rx="5" fill="rgba(45,212,191,0.10)" stroke="#2dd4bf" stroke-width="1.2" stroke-dasharray="5 3"/>
             <text x="145" y="120" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="#0d001a">Fetch Q3 Current Year</text>
@@ -475,7 +475,7 @@
                   <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
                 </filter>
                 <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-                  <path d="M0,0 L8,3 L0,6" fill="none" stroke="#4a9eff" stroke-width="1"/>
+                  <path d="M0,0 L8,3 L0,6" fill="none" stroke="#A100FF" stroke-width="1"/>
                 </marker>
               </defs>
               <rect width="760" height="420" fill="url(#depGrid)"/>
@@ -486,26 +486,26 @@
 
               <!-- Dependency lines (animated) -->
               <!-- A -> C -->
-              <line x1="220" y1="50" x2="340" y2="170" stroke="#4a9eff" stroke-width="1.5" class="dep-line delay-1" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
+              <line x1="220" y1="50" x2="340" y2="170" stroke="#A100FF" stroke-width="1.5" class="dep-line delay-1" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
               <!-- A -> D -->
-              <line x1="220" y1="50" x2="340" y2="240" stroke="#4a9eff" stroke-width="1.5" class="dep-line delay-2" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
+              <line x1="220" y1="50" x2="340" y2="240" stroke="#A100FF" stroke-width="1.5" class="dep-line delay-2" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
               <!-- A -> E -->
-              <line x1="220" y1="50" x2="460" y2="170" stroke="#4a9eff" stroke-width="1.5" class="dep-line delay-3" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
+              <line x1="220" y1="50" x2="460" y2="170" stroke="#A100FF" stroke-width="1.5" class="dep-line delay-3" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
               <!-- B -> E -->
               <line x1="220" y1="110" x2="460" y2="170" stroke="#2dd4bf" stroke-width="1.5" class="dep-line delay-3" marker-end="url(#arrowBlue)" filter="url(#glowTeal)"/>
               <!-- C -> F -->
-              <line x1="440" y1="170" x2="540" y2="290" stroke="#4a9eff" stroke-width="1.5" class="dep-line delay-4" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
+              <line x1="440" y1="170" x2="540" y2="290" stroke="#A100FF" stroke-width="1.5" class="dep-line delay-4" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
               <!-- D -> F -->
-              <line x1="440" y1="240" x2="540" y2="290" stroke="#4a9eff" stroke-width="1.5" class="dep-line delay-5" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
+              <line x1="440" y1="240" x2="540" y2="290" stroke="#A100FF" stroke-width="1.5" class="dep-line delay-5" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
               <!-- E -> F -->
-              <line x1="560" y1="180" x2="580" y2="280" stroke="#4a9eff" stroke-width="1.5" class="dep-line delay-5" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
+              <line x1="560" y1="180" x2="580" y2="280" stroke="#A100FF" stroke-width="1.5" class="dep-line delay-5" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
               <!-- F -> G -->
-              <line x1="620" y1="300" x2="640" y2="370" stroke="#4a9eff" stroke-width="1.5" class="dep-line delay-7" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
+              <line x1="620" y1="300" x2="640" y2="370" stroke="#A100FF" stroke-width="1.5" class="dep-line delay-7" marker-end="url(#arrowBlue)" filter="url(#glowBlue)"/>
 
               <!-- Task Nodes -->
               <!-- Task A -->
               <g class="task-node n-a" filter="url(#glowBlue)">
-                <rect x="120" y="25" width="200" height="50" rx="4" fill="#ffffff" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
+                <rect x="120" y="25" width="200" height="50" rx="4" fill="#ffffff" stroke="#A100FF" stroke-width="1.5" stroke-dasharray="6 3"/>
                 <text x="135" y="47" class="task-label">A: Pull Q4 Sales Data</text>
                 <text x="135" y="63" class="task-sublabel">No dependency</text>
               </g>
@@ -519,21 +519,21 @@
 
               <!-- Task C -->
               <g class="task-node n-c" filter="url(#glowBlue)">
-                <rect x="340" y="150" width="200" height="46" rx="4" fill="#ffffff" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
+                <rect x="340" y="150" width="200" height="46" rx="4" fill="#ffffff" stroke="#A100FF" stroke-width="1.5" stroke-dasharray="6 3"/>
                 <text x="355" y="170" class="task-label">C: Regional Breakdown</text>
                 <text x="355" y="184" class="task-sublabel">Depends on A</text>
               </g>
 
               <!-- Task D -->
               <g class="task-node n-d" filter="url(#glowBlue)">
-                <rect x="340" y="216" width="200" height="46" rx="4" fill="#ffffff" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
+                <rect x="340" y="216" width="200" height="46" rx="4" fill="#ffffff" stroke="#A100FF" stroke-width="1.5" stroke-dasharray="6 3"/>
                 <text x="355" y="236" class="task-label">D: Product Analysis</text>
                 <text x="355" y="250" class="task-sublabel">Depends on A</text>
               </g>
 
               <!-- Task E -->
               <g class="task-node n-e" filter="url(#glowBlue)">
-                <rect x="460" y="150" width="200" height="46" rx="4" fill="#ffffff" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 3"/>
+                <rect x="460" y="150" width="200" height="46" rx="4" fill="#ffffff" stroke="#A100FF" stroke-width="1.5" stroke-dasharray="6 3"/>
                 <text x="475" y="170" class="task-label">E: YoY Comparison</text>
                 <text x="475" y="184" class="task-sublabel">Depends on A + B</text>
               </g>
@@ -600,7 +600,7 @@
           <div class="benefits-grid">
             <div class="benefit-item reveal reveal--delay-1">
               <div class="benefit-item__icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4a9eff" stroke-width="1.5"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="12" y1="9" x2="12" y2="21"/></svg>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A100FF" stroke-width="1.5"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="12" y1="9" x2="12" y2="21"/></svg>
               </div>
               <div class="benefit-item__title">Exceeds Context Windows</div>
               <div class="benefit-item__text">

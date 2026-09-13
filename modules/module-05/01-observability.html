@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Observability &amp; Structured Tracing &mdash; Data Agent Academy</title>
-  <link rel="stylesheet" href="../../css/design-system.css?v=11">
-  <link rel="stylesheet" href="../../css/components.css?v=11">
-  <link rel="stylesheet" href="../../css/animations.css?v=11">
+  <link rel="stylesheet" href="../../css/design-system.css?v=12">
+  <link rel="stylesheet" href="../../css/components.css?v=12">
+  <link rel="stylesheet" href="../../css/animations.css?v=12">
   <style>
     /* --- Trace Viewer --- */
     .trace-viewer {
@@ -293,12 +293,12 @@
             <filter id="obs-glow-teal"><feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#2dd4bf" flood-opacity="0.5"/></filter>
           </defs>
           <!-- Background -->
-          <rect width="700" height="380" rx="12" fill="rgba(15,23,42,0.85)" stroke="#d4c8f0" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <rect width="700" height="380" rx="12" fill="rgba(248,245,255,0.98)" stroke="#d4c8f0" stroke-width="1.5" stroke-dasharray="6 4"/>
           <!-- Title -->
-          <text x="350" y="32" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#4a9eff" font-weight="700" letter-spacing="2">DATAPULSE STRUCTURED TRACE</text>
+          <text x="350" y="32" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#A100FF" font-weight="700" letter-spacing="2">DATAPULSE STRUCTURED TRACE</text>
           <!-- REQUEST marker -->
-          <rect x="20" y="55" width="72" height="28" rx="6" fill="none" stroke="#4a9eff" stroke-width="1.5" filter="url(#obs-glow-blue)"/>
-          <text x="56" y="73" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#4a9eff" font-weight="700">REQUEST</text>
+          <rect x="20" y="55" width="72" height="28" rx="6" fill="none" stroke="#A100FF" stroke-width="1.5" filter="url(#obs-glow-blue)"/>
+          <text x="56" y="73" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#A100FF" font-weight="700">REQUEST</text>
           <!-- RESPONSE marker -->
           <rect x="608" y="55" width="72" height="28" rx="6" fill="none" stroke="#10b981" stroke-width="1.5" filter="url(#obs-glow-green)"/>
           <text x="644" y="73" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#10b981" font-weight="700">RESPONSE</text>
@@ -306,13 +306,13 @@
           <line x1="92" y1="69" x2="110" y2="69" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
           <line x1="590" y1="69" x2="608" y2="69" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
           <!-- Outer span: agent_turn (full width) -->
-          <rect x="110" y="52" width="480" height="34" rx="6" fill="rgba(74,158,255,0.08)" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 4"/>
-          <text x="120" y="73" font-family="JetBrains Mono, monospace" font-size="10" fill="#4a9eff" font-weight="600">agent_turn</text>
+          <rect x="110" y="52" width="480" height="34" rx="6" fill="rgba(74,158,255,0.08)" stroke="#A100FF" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <text x="120" y="73" font-family="JetBrains Mono, monospace" font-size="10" fill="#A100FF" font-weight="600">agent_turn</text>
           <text x="540" y="73" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d2060" text-anchor="end">2.4s total</text>
           <!-- Nested spans row -->
           <!-- Span 1: think (20% = 96px) -->
-          <rect x="120" y="100" width="96" height="44" rx="5" fill="rgba(74,158,255,0.1)" stroke="#4a9eff" stroke-width="1.2" stroke-dasharray="5 3"/>
-          <text x="168" y="119" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#4a9eff" font-weight="600">think</text>
+          <rect x="120" y="100" width="96" height="44" rx="5" fill="rgba(74,158,255,0.1)" stroke="#A100FF" stroke-width="1.2" stroke-dasharray="5 3"/>
+          <text x="168" y="119" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#A100FF" font-weight="600">think</text>
           <text x="168" y="134" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d2060">0.3s</text>
           <!-- Span 2: tool: schema_lookup (15% = 72px) -->
           <rect x="224" y="100" width="72" height="44" rx="5" fill="rgba(45,212,191,0.1)" stroke="#2dd4bf" stroke-width="1.2" stroke-dasharray="5 3"/>
@@ -323,8 +323,8 @@
           <text x="400" y="119" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#2dd4bf" font-weight="600">tool: sql_execute</text>
           <text x="400" y="134" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d2060">0.8s</text>
           <!-- Span 4: think: validate (10% = 48px) -->
-          <rect x="504" y="100" width="48" height="44" rx="5" fill="rgba(74,158,255,0.1)" stroke="#4a9eff" stroke-width="1.2" stroke-dasharray="5 3"/>
-          <text x="528" y="119" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#4a9eff" font-weight="600">validate</text>
+          <rect x="504" y="100" width="48" height="44" rx="5" fill="rgba(74,158,255,0.1)" stroke="#A100FF" stroke-width="1.2" stroke-dasharray="5 3"/>
+          <text x="528" y="119" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#A100FF" font-weight="600">validate</text>
           <text x="528" y="134" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d2060">0.1s</text>
           <!-- Span 5: format_response (15% = 72px) -->
           <rect x="560" y="100" width="72" height="44" rx="5" fill="rgba(16,185,129,0.1)" stroke="#10b981" stroke-width="1.2" stroke-dasharray="5 3"/>
@@ -337,7 +337,7 @@
           <line x1="504" y1="86" x2="504" y2="100" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="3 2"/>
           <line x1="560" y1="86" x2="560" y2="100" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="3 2"/>
           <!-- Span type legend -->
-          <rect x="120" y="165" width="10" height="10" rx="2" fill="rgba(74,158,255,0.3)" stroke="#4a9eff" stroke-width="1"/>
+          <rect x="120" y="165" width="10" height="10" rx="2" fill="rgba(74,158,255,0.3)" stroke="#A100FF" stroke-width="1"/>
           <text x="136" y="174" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d2060">LLM reasoning</text>
           <rect x="250" y="165" width="10" height="10" rx="2" fill="rgba(45,212,191,0.3)" stroke="#2dd4bf" stroke-width="1"/>
           <text x="266" y="174" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d2060">Tool execution</text>
@@ -350,7 +350,7 @@
           <!-- Metadata boxes -->
           <rect x="40" y="238" width="145" height="50" rx="6" fill="rgba(74,158,255,0.06)" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="5 3"/>
           <text x="112" y="257" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#3d2060">trace_id</text>
-          <text x="112" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#4a9eff" font-weight="600">abc-123</text>
+          <text x="112" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#A100FF" font-weight="600">abc-123</text>
           <rect x="200" y="238" width="145" height="50" rx="6" fill="rgba(74,158,255,0.06)" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="5 3"/>
           <text x="272" y="257" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#3d2060">user</text>
           <text x="272" y="275" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#2dd4bf" font-weight="600">sofia_torres</text>

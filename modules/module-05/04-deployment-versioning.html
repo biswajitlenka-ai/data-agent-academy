@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deployment Patterns &amp; Versioning &mdash; Data Agent Academy</title>
-  <link rel="stylesheet" href="../../css/design-system.css?v=11">
-  <link rel="stylesheet" href="../../css/components.css?v=11">
-  <link rel="stylesheet" href="../../css/animations.css?v=11">
+  <link rel="stylesheet" href="../../css/design-system.css?v=12">
+  <link rel="stylesheet" href="../../css/components.css?v=12">
+  <link rel="stylesheet" href="../../css/animations.css?v=12">
   <style>
     /* --- Deployment Pattern Cards --- */
     .deploy-card {
@@ -254,15 +254,15 @@
             <filter id="dep-glow-blue"><feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#4a9eff" flood-opacity="0.5"/></filter>
           </defs>
           <!-- Background -->
-          <rect width="700" height="380" rx="12" fill="rgba(15,23,42,0.85)" stroke="#d4c8f0" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <rect width="700" height="380" rx="12" fill="rgba(248,245,255,0.98)" stroke="#d4c8f0" stroke-width="1.5" stroke-dasharray="6 4"/>
           <!-- Title -->
-          <text x="350" y="30" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#4a9eff" font-weight="700" letter-spacing="2">DEPLOYMENT STRATEGIES</text>
+          <text x="350" y="30" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#A100FF" font-weight="700" letter-spacing="2">DEPLOYMENT STRATEGIES</text>
 
           <!-- === CANARY (left) === -->
           <text x="120" y="60" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#0d001a" font-weight="700" letter-spacing="1">CANARY</text>
           <!-- v1.2 large box -->
-          <rect x="30" y="75" width="140" height="100" rx="6" fill="rgba(74,158,255,0.1)" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 4"/>
-          <text x="100" y="120" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#4a9eff" font-weight="600">v1.2</text>
+          <rect x="30" y="75" width="140" height="100" rx="6" fill="rgba(74,158,255,0.1)" stroke="#A100FF" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <text x="100" y="120" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#A100FF" font-weight="600">v1.2</text>
           <text x="100" y="140" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d2060">(95%)</text>
           <!-- v1.3 small box -->
           <rect x="175" y="135" width="48" height="40" rx="5" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="1.5" filter="url(#dep-glow-green)"/>
@@ -275,9 +275,9 @@
           <!-- === BLUE-GREEN (center) === -->
           <text x="350" y="60" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#0d001a" font-weight="700" letter-spacing="1">BLUE-GREEN</text>
           <!-- Blue box -->
-          <rect x="265" y="75" width="80" height="100" rx="6" fill="rgba(74,158,255,0.12)" stroke="#4a9eff" stroke-width="1.8" filter="url(#dep-glow-blue)"/>
-          <text x="305" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#4a9eff" font-weight="700">BLUE</text>
-          <text x="305" y="125" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#4a9eff">v1.2</text>
+          <rect x="265" y="75" width="80" height="100" rx="6" fill="rgba(74,158,255,0.12)" stroke="#A100FF" stroke-width="1.8" filter="url(#dep-glow-blue)"/>
+          <text x="305" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#A100FF" font-weight="700">BLUE</text>
+          <text x="305" y="125" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#A100FF">v1.2</text>
           <text x="305" y="145" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#3d2060">(active)</text>
           <!-- Green box -->
           <rect x="355" y="75" width="80" height="100" rx="6" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-width="1.2" stroke-dasharray="5 3"/>
@@ -292,8 +292,8 @@
           <!-- === SHADOW (right) === -->
           <text x="580" y="60" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#0d001a" font-weight="700" letter-spacing="1">SHADOW</text>
           <!-- v1.2 live box -->
-          <rect x="505" y="75" width="100" height="100" rx="6" fill="rgba(74,158,255,0.1)" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="6 4"/>
-          <text x="555" y="115" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#4a9eff" font-weight="600">v1.2</text>
+          <rect x="505" y="75" width="100" height="100" rx="6" fill="rgba(74,158,255,0.1)" stroke="#A100FF" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <text x="555" y="115" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#A100FF" font-weight="600">v1.2</text>
           <text x="555" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#3d2060">(live)</text>
           <!-- v1.3 shadow/dashed ghost box -->
           <rect x="615" y="90" width="70" height="70" rx="6" fill="rgba(51,65,85,0.15)" stroke="#d4c8f0" stroke-width="1.5" stroke-dasharray="3 3"/>
@@ -311,8 +311,8 @@
 
           <!-- Progression arrow -->
           <text x="350" y="310" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#3d2060" letter-spacing="1">DATAPULSE PROGRESSION</text>
-          <rect x="120" y="320" width="80" height="24" rx="5" fill="rgba(74,158,255,0.08)" stroke="#4a9eff" stroke-width="1" stroke-dasharray="4 3"/>
-          <text x="160" y="336" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#4a9eff">Canary</text>
+          <rect x="120" y="320" width="80" height="24" rx="5" fill="rgba(74,158,255,0.08)" stroke="#A100FF" stroke-width="1" stroke-dasharray="4 3"/>
+          <text x="160" y="336" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#A100FF">Canary</text>
           <line x1="200" y1="332" x2="240" y2="332" stroke="#d4c8f0" stroke-width="1"/>
           <polygon points="238,328 246,332 238,336" fill="#f0eaff"/>
           <rect x="248" y="320" width="80" height="24" rx="5" fill="rgba(51,65,85,0.15)" stroke="#d4c8f0" stroke-width="1" stroke-dasharray="4 3"/>
